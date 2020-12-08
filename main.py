@@ -54,7 +54,3 @@ if __name__ == "__main__":
 
     cap.release()
     cv2.destroyAllWindows()
-
-
-def hex2rgb(hex):
-    return [int(KELLY_COLORS[idx][i:i + 2], 16) for i in (0, 2, 4)]
