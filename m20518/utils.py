@@ -1,6 +1,7 @@
 import numpy as np
 
 
+# cv.connectedComponents와 동일
 def label(img):
     img = np.pad(img, 1)
     img_out = np.zeros(img.shape)
@@ -27,10 +28,12 @@ def label(img):
     return img_out
 
 
+# labeled image에서 label_idx값을 가지는 픽셀 수
 def calc_area(img, label_idx):
     return len(img[img == label_idx])
 
 
+# labeled image에서 label_idx값을 가지는 픽셀을 추려내고 x, y 축 각각 첫 위치와 마지막 위치로 bbox계산
 def calc_bbox(img, label_idx):
     tmp = np.zeros(img.shape)
     tmp[img == label_idx] = 1
