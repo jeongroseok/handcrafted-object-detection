@@ -2,7 +2,11 @@
 
 - 이미지 분석 과정은 [notebooks/analysis.ipynb](./notebooks/analysis.ipynb) 파일에 있습니다.
 - m20518 파이썬 패키지에 모폴로지 함수와, 라벨링 함수를 구현하였습니다.
-- 직접 구현한 패키지의 속도가 너무 느리기 때문에, cv를 부분적으로 사용한 확인용 [main_video_with_cv](./main_video_with_cv.py) 파일과 직접 구현한 패키지만을 사용한 [main_video_without_cv.py](./main_video_without_cv.py) 파일 두가지가 있습니다.
+- 테스팅을 위해 [sample.mp4](./data/sample.mp4) 영상도 함께 업로드 했습니다.
+- 아래 두 파일은 추가 설정없이 작동합니다.
+- 직접 구현한 패키지의 속도가 너무 느리기 때문에:
+  - cv를 부분적으로 사용하고 빠른 [main_video_with_cv](./main_video_with_cv.py) 파일과
+  - 직접 구현한 패키지만을 사용하고 느린 [main_video_without_cv.py](./main_video_without_cv.py) 파일 두가지가 있습니다.
 
 ## 환경
 
